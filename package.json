@@ -4,6 +4,7 @@
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
+  "proxy": "http://localhost:8888/",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
