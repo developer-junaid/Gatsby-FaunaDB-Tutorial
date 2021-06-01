@@ -3,6 +3,11 @@ const { query } = faunadb
 
 // Handler
 const handler = async event => {
+  // If method is not POST
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" }
+  }
+
   let secret = "fnAEKhFvg4ACCS2P1tnf1WjdyJWTe0WG2fpiznxA"
 
   const messageBody = JSON.parse(event.body) // Get Data from body

@@ -30,3 +30,4 @@
 - Frontend
 - - Make form template in src/pages/index.js
 - - Add Data to database on Submit
+- Test the app, It's working fine !!

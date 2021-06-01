@@ -1,10 +1,11 @@
 import React, { useEffect } from "react"
 import { Formik } from "formik"
+import "./style.css"
 
 // Home
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <h1>Add a message</h1>
       <Formik
         initialValues={{ message: "" }}
