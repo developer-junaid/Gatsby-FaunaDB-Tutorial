@@ -1,5 +1,9 @@
 ## FaunaDB with Netlify Serverless Functions, Gatsby
 
+## Interface _(The focus is not styling)_
+
+<img src='./images/home.png'>
+
 ## Steps
 
 - Signup on [Netlify](https://www.netlify.com/)
