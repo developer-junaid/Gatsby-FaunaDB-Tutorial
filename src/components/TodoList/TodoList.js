@@ -1,8 +1,5 @@
 import React from "react"
 
-// Form
-import { Formik } from "formik"
-
 // Styles
 import "./styles.css"
 import "../../utils/font-awesome"
@@ -23,6 +20,8 @@ const TodoList = () => {
       <div className="row mx-1 px-5 pb-3 w-80">
         <div className="col mx-auto">
           <TodoItem />
+          <TodoItem />
+          <TodoItem />
         </div>
       </div>
     </div>
@@ -30,58 +29,3 @@ const TodoList = () => {
 }
 
 export default TodoList
-
-{
-  /* <div className="container">
-<h1>Add a message</h1>
-<Formik
-  initialValues={{ message: "" }}
-  validate={values => {
-    const errors = {}
-    if (!values.message) {
-      errors.message = "Required"
-    }
-    return errors
-  }}
-  onSubmit={(values, { setSubmitting }) => {
-    console.log("values", values)
-    // Post Data
-    fetch(`/.netlify/functions/add_message`, {
-      method: "POST",
-      body: JSON.stringify(values),
-    })
-      .then(res => res.json())
-      .then(result => {
-        console.log("success", result)
-      })
-      .catch(err => {
-        console.log(err)
-      })
-  }}
->
-  {({
-    values,
-    errors,
-    touched,
-    handleChange,
-    handleBlur,
-    handleSubmit,
-    isSubmitting,
-  }) => (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="message"
-        onChange={handleChange}
-        onBlur={handleBlur}
-        value={values.message}
-      />
-      {errors.message && touched.message && errors.message}
-      <button type="submit" disabled={isSubmitting}>
-        Add Message
-      </button>
-    </form>
-  )}
-</Formik>
-</div> */
-}
